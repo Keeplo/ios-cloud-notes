@@ -7,8 +7,8 @@
 팀원 : 개인 Marco([keeplo](https://github.com/Keeplo))
 
 **Index** 프로젝트 Step 별 회고  
-Step 1 [Readme]()  
-Step 2 [Readme]()  
+Step 1 [Readme](https://github.com/Keeplo/ios-cloud-notes/tree/step1)  
+Step 2 [Readme](https://github.com/Keeplo/ios-cloud-notes/tree/step2)  
 
 ### 프로젝트 회고
 
