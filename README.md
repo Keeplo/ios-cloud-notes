@@ -13,8 +13,14 @@
 * 메모를 표현해 줄 Model 구현
 
 # 구현한 요구 기능 시연
-![Simulator Screen Recording - iPhone 12 Pro Max - 2021-09-18 at 19 34 52](https://user-images.githubusercontent.com/24707229/133885909-2dab14c6-717d-4348-ade8-100111879d37.gif)
+***iPhone 12 Pro Max Portrait***  
+![Simulator Screen Recording - iPhone 12 Pro Max - 2021-09-18 at 19 34 52](https://user-images.githubusercontent.com/24707229/133885909-2dab14c6-717d-4348-ade8-100111879d37.gif)  
 
+***iPhone 12 Pro Max Landscape Right***  
+![ezgif com-video-to-gif-2](https://user-images.githubusercontent.com/24707229/133886470-ca114e63-fef9-4634-8ab1-fccb86479ad9.gif)
+
+***iPad 11-inch Pro Portrait***  
+![ezgif com-video-to-gif](https://user-images.githubusercontent.com/24707229/133886435-f6727672-63e0-48ac-bd31-9ce28eb62d3f.gif)
 
 # 📝 새롭게 알게된 개념
 * **Apps Adaptive**    
