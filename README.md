@@ -81,11 +81,14 @@ class SecondaryViewController: UIViewController {
 ```
 </div></details>
 
+> 관련 문서  
+> [Article Displaying and Managing Views with a View Controller](https://developer.apple.com/documentation/uikit/view_controllers/displaying_and_managing_views_with_a_view_controller)
+
 2) 앱 전반에 중요한 역할을 할 메모 Model 데이터가 어디에서 메인으로 다루어질지.
 > 저장된 메모 리스트를 보여주기 위해서 TableView를 그려줄 배열 데이터 위치르 고민했다.  
 > Storyboard에서 SplitViewController를 생성해도 default로 2개 이상의 화면이 생성되고,  
 > Primary Column과 Secondary Column은 Container(SplitView)의 Subviews로 보기 때문에,
-> 세 ViwController르 모두 다루느 데이터가 될 꺼라서 배열의 위치르 고민했다.  
+> 세 ViwController르 모두 다루는 데이터가 될 꺼라서 배열의 위치르 고민했다.  
 > 일단 TableView를 그려주어야 하기때문에 Primary Column에 두었다.
 
 3) SplitView를 이용해서 동시에 나타나는 Child Views 간에 데이터 전달을 어떻게 할지?
