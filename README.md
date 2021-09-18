@@ -12,6 +12,10 @@
   - Size Class에 따라 다르게 표현되는 List View와 Detail View의 구성 (아이폰, 아이패드, Pro 아이폰 가로모드 등)
 * 메모를 표현해 줄 Model 구현
 
+# 구현한 요구 기능 시연
+![Simulator Screen Recording - iPhone 12 Pro Max - 2021-09-18 at 19 34 52](https://user-images.githubusercontent.com/24707229/133885909-2dab14c6-717d-4348-ade8-100111879d37.gif)
+
+
 # 📝 새롭게 알게된 개념
 * **Apps Adaptive**    
   단순히 Auto Layout 적용 수준을 넘어서 다양한 기기와 기기에 Size Class에 따라 UI 구성을 다르게 해야 한다는 점을 알게 됨. 
