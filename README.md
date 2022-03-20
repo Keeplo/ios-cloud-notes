@@ -17,17 +17,19 @@
 
 ## Demo
 <details><summary>UML</summary><div markdown="1">
-    
-
+   
+<img width="1572" alt="after" src="https://user-images.githubusercontent.com/24707229/159155648-55b974dd-28a9-4537-bc58-cee536eab2ad.png">
 </div></details>
 <details><summary>Demo Image</summary><div markdown="1">
     
-**iPhone 12 Pro Max Portrait**
+**iPhone 12 Pro Max Portrait**   
+![iPhone 12 Pro Max Portrait](https://user-images.githubusercontent.com/24707229/159155657-9d33f363-2093-4573-ad84-4131300dee7d.gif)
 
-**iPhone 12 Pro Max Landscape Right**
+**iPhone 12 Pro Max Landscape Right**  
+![iPhone 12 Pro Max Landscape Right](https://user-images.githubusercontent.com/24707229/159155664-1596241b-8351-4f51-a0d3-23805796241a.gif)
 
-**iPad 11-inch Pro Portrait**
-
+**iPad 11-inch Pro Portrait**  
+![iPad 11-inch Pro Portrait](https://user-images.githubusercontent.com/24707229/159155666-ea0229a9-02d2-41b4-8b17-1266ca5dd83a.gif)
 </div></details>
 
 ## Troubleshootings
@@ -75,7 +77,8 @@ extension SplitViewController: SelectedCellDelegate {
 직접 ChildViews (PrimaryView-SecondaryColumn) 간에 데이터를 전달하는 것보다 Container View를 거치는 형태로 위 예제코드처럼 구현함 아래 공식문서에서 Message Forwarding 자료를 참고함
 
 > 참고자료 [Documentation - SplitViewController](https://developer.apple.com/documentation/uikit/uisplitviewcontroller/)
-> 이미지
+> ![메시지](https://user-images.githubusercontent.com/24707229/159155677-9db52e4a-7149-4490-9ba5-310f3d3ad2e3.png)
+
 
 
 </div></details>
@@ -138,11 +141,11 @@ extension SplitViewController: SelectedCellDelegate {
 <details><summary> UML 그리기를 통해서 앱 전반의 모든 관계를 고민 </summary><div markdown="1">
     
 * **Before**  
-이미지  
+<img width="1442" alt="before" src="https://user-images.githubusercontent.com/24707229/159155685-506363f9-52cc-4768-8aeb-5689b8730a22.png">
 두 ChildViews가 Container ViewController의 인스턴스를 참조하면서 집합관계와 합성관계를 동시에 가지거나, 모든 ViewController에서 의존관계가 얽혀 있음
 
 UML을 그리고 나서 현재 구조에 문제점을 깨닫고 의존관계를 줄이는 작업을 시도함 
 * **After**  
-이미지  
+<img width="1572" alt="after" src="https://user-images.githubusercontent.com/24707229/159155688-d7848508-51d8-4107-a847-a767b76683e8.png">
 CoreDataManager가 Data Resource 역할을 하고 각 Child ViewController에 의존관계가 되는 형태로 변경
 </div></details>
