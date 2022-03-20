@@ -146,4 +146,3 @@ UML을 그리고 나서 현재 구조에 문제점을 깨닫고 의존관계를 
 이미지  
 CoreDataManager가 Data Resource 역할을 하고 각 Child ViewController에 의존관계가 되는 형태로 변경
 </div></details>
-
