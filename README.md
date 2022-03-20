@@ -149,3 +149,5 @@ UML을 그리고 나서 현재 구조에 문제점을 깨닫고 의존관계를 
 <img width="1572" alt="after" src="https://user-images.githubusercontent.com/24707229/159155688-d7848508-51d8-4107-a847-a767b76683e8.png">
 CoreDataManager가 Data Resource 역할을 하고 각 Child ViewController에 의존관계가 되는 형태로 변경
 </div></details>
+
+[캠프 프로젝트 회고 및 알게된저 정리](https://github.com/keeplo/ios-cloud-notes/blob/main/camp_README.md)
