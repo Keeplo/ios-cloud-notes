@@ -1,46 +1,148 @@
 ## iOS 커리어 스타터 캠프
 
-### 동기화 메모장 저장소
+# CloudNotes
+## Information
+* 프로젝트 기간 : 2021.09.27. ~ 2021.09.17.
+* 프로젝트 인원 : 개인 Marco(@Keeplo)
+* 프로젝트 소개 
+    > Open API 를 이용해서 선택 지역 및 현재 위치의 날씨를 제공하는 앱
+* Pull Requests
+    * [Step 1](https://github.com/yagom-academy/ios-cloud-notes/pull/50)  
+    * [Step 2](https://github.com/yagom-academy/ios-cloud-notes/pull/63)
 
-# 🗒 동기화 메모장 프로젝트
-기간 : 2021.08.30 ~ 2021.09.17
-팀원 : 개인 Marco([keeplo](https://github.com/Keeplo))
+### Tech Stack
+* Swift 5.4
+* Xcode 12.5
+* iOS 14.0
 
-**Index** 프로젝트 Step 별 회고  
-Step 1 [Readme](https://github.com/Keeplo/ios-cloud-notes/tree/step1)  
-Step 2 [Readme](https://github.com/Keeplo/ios-cloud-notes/tree/step2)  
+## Demo
+<details><summary>UML</summary><div markdown="1">
+    
 
-### 프로젝트 회고
+</div></details>
+<details><summary>Demo Image</summary><div markdown="1">
+    
+**iPhone 12 Pro Max Portrait**
 
-#### 서론  
-부트 캠프를 참여하게 된 이유 중 가장 큰 부분을 차지하는 점은 많은 프로젝트 경험이었다.  
-이전 프로젝트들의 기본 기능은 여태 내가 경험했었던 iOS 앱 개발 예제 책, 인터넷 강의 등등 충분히 접했던 부분이었지만,   
-이번 프로젝트는 그런 부분에서 내가 처음 접하는 기능이 많았고 한글로 된 자료 찾기는 어려운 내용이 많았다.   
+**iPhone 12 Pro Max Landscape Right**
 
-#### 느낀 점
-이번 프로젝트를 진행하면서 내가 이미 아는 내용, 경험한 내용을 토대로 편하게 캠프를 진행했다고 깨닫기도 했고,  
-처음 접하는 기능을 이해하기 위해 공식문서, 다양한 인터넷 자료에서 어떻게 지식을 습득해야 하는지 나만의 방법을 터득해가는 시작점이 된 것 같다.   
-SplitView나 CoreData 라는 기능을 처음 접했지만 여태 프로젝트처럼 Size Classes에 관한 내용 Attribute String, 다크모드, 애니메이션 등등   
-초보 개발자라면 놓치기 쉬운 많은 디테일에 관련한 부분들까지 다양한 경험을 할 수 있었다.   
-사용자를 위하거나 앱을 좀 더 풍부하게 해주는 UI 부분이다 보니 배우는 재미가 있었다.  
+**iPad 11-inch Pro Portrait**
 
-#### 아쉬운 점
-이번 프로젝트에서 진행하는 전체 Step에 걸쳐 처음 접하는 내용이 많다 보니 깊이보다는 프로젝트 기능 구현에 집중한 것 같다.  
-이번 프로젝트는 구현되는 수준까지만 이해하는 것도 힘들었고,  
-다른 내용도 처음 접하다 보니 경험해보고 싶었는데 제한된 시간에서 경험해보지 못해서 아쉬웠다.  
+</div></details>
 
-그런데 구현이 잘되고 잘 만든 것 같아서 넘어갔던 부분에 대해서  
-다양한 방향을, 세세한 부분까지 의문점을 가지고 고민하는 다른 캠퍼들을 보면서,  
-당장 직전 프로젝트에서 Step 1까지만 진행해서 Step 2, 3 내용을 못 다뤄 본 게 아쉽지만,  
-통신과 테스트를 많이 고민해보고 다뤘다고 만족하던 내 모습을 잊었던 점에 나를 다시 돌아보게 되었다.  
+## Troubleshootings
+<details><summary> SplitView의 ChildViews 간에 데이터 전달 방법 </summary><div markdown="1">
 
-#### 결론
-그런 점에서 야곰에게 직접 어떤 프로젝트를 진행하는 과정에서 제한된 시간에 기능 구현을 위해 공부를 어느 정도까지 해야 하는 지 질문하기도 했다.  
-"어떤 구현에도 정답은 없다 보니 해당 기능을 구현하는 방향에 어떤 방향들이 있을지 파악할 수 있는 정도까지 공부해야 하고,   
-내가 선택한 방향에 대해 어떤 이유와 어떤 근거를 가지고 그런 선택을 하게 됐는지 말할 수 있어야 한다." 라고 조언을 해주셨다.  
-조언에 조건은 필수고 거기에 시간제한을 위한 유연함은 개개인이 가져가야 할 숙제처럼 느껴졌다.  
+> ContainerView(SplitViewController)
+> PrimaryView(PrimaryViewController)  
+> Secondary Column(SecondaryViewController)
+    
+구조를 가진 SplitView 형태에서 PrimaryView에서 선택된 메모를 Secondary Column인 ViewController로 데이터를 전달하는 과정을 고민함
+<details><summary>예제코드</summary>
+<div markdown="1">
 
-앞으로 진행할 프로젝트를 앞두고 많은 것을 경험해보는 것 VS 깊게 공부하고 고민해보는 것   
-이렇게 두 가지를 저울질하는 게 프로젝트를 마칠 때까지 나의 숙제일 것 같다.  
-하지만 아무래도 깊게 공부하고 고민해보는 게 신입 개발자로서 어필하기 좋은 매력이 될 수 있다고 생각한다.  
-당장 눈앞에 문제를 해결하기 위해 얇고 넓은 지식을 가진 것보다 문제 해결을 위한 탐구를 할 줄 아는 게 좋은 역량일 것 같다.   
+```swift
+// MARK: - TableView Primary Column
+class PrimaryTableViewDataSource: NSObject {
+    typealias SelectedMemoAction = (Memo, IndexPath, Bool) -> Void
+    
+    private var selectedMemoAction: SelectedMemoAction?
+    private var memos: [Memo] = []
+    
+    init(showDetailAction: @escaping SelectedMemoAction) {
+        super.init()
+        self.selectedMemoAction = showDetailAction
+    }
+}
+// MARK: - TableView Delegate
+extension PrimaryTableViewDataSource: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let selectedMemo = memos[indexPath.row]
+        selectedMemoAction?(selectedMemo, indexPath, true)
+    }
+}
+// MARK: - Container View
+extension SplitViewController: SelectedCellDelegate {
+    func showSelectedDetail(_ memo: Memo, isSelected: Bool) {
+        secondaryViewController?.updateDetailView(by: memo)
+        if isSelected {
+            show(.secondary)
+        }
+    }
+}
+```
+</div></details>
+직접 ChildViews (PrimaryView-SecondaryColumn) 간에 데이터를 전달하는 것보다 Container View를 거치는 형태로 위 예제코드처럼 구현함 아래 공식문서에서 Message Forwarding 자료를 참고함
+
+> 참고자료 [Documentation - SplitViewController](https://developer.apple.com/documentation/uikit/uisplitviewcontroller/)
+> 이미지
+
+
+</div></details>
+<details><summary> 엔티티(DataSource)의 위치 고민 </summary><div markdown="1">
+
+> ViewController (Primary, Secondary)가 동일한 하나의 엔티티를 참조함  
+> ContainerView에 위치하면 좋을지 실제로 사용할 ChildViewController에서 다뤄야 할지 고민
+<details><summary>변화 과정 및 각 구현의 문제점 정리</summary>
+<div markdown="1">
+
+  **기존 위치**
+  ```swift 
+  // Step 1에서 List를 위한 Memo 배열 위치
+  class PrimaryTableViewDataSource: NSObject {
+    // ...
+    private var memos: [Memo] = []
+  }
+  ```
+  -> 문제점 : TableViewController와의 소통이 Container와 중복됨, SecondaryViewController와의 소통이 복잡함
+  
+  **AppDelegate에서 관리**
+  ```swift
+  // 첫번째 변경 아이디어 AppDelegate
+  @main
+  class AppDelegate: UIResponder, UIApplicationDelegate {
+    var memos: [Memo] = []
+  }
+
+  // MARK: - TableView DataSource
+  extension PrimaryViewController {
+    let appDelegate = UIApplication.shared.delegate as! AppDelegate
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return appDelegate.memos.count
+    }
+  }
+  ```
+  -> 문제점 : 현재 앱에서 큰 문제가 되지 않지만 규모가 커진다면 Container를 벗어나 전역으로 관리하는 Resource는 좋지 않음..
+  
+  **DataManager**
+  ```swift
+  // CoreData Manager에서 해당 배열으 저장
+  class MemoCoreDataManager {
+    static let shared = MemoCoreDataManager()
+    private var memos: [MemoData] {
+  
+  // MARK: - TableView DataSource
+  extension PrimaryViewController {
+    let coreManager MemoCoreDataManager.shared
+  
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return coreManager.memos.count
+    }
+  }
+  ```
+  -> 상황에 따라 환경에 따라 다르겠지만 추후 CoreData(영구저장) 및 Cloud(동기화) 등 처리할 DataManager의 위치시킴
+ 
+</div></details>
+</div></details>
+
+<details><summary> UML 그리기를 통해서 앱 전반의 모든 관계를 고민 </summary><div markdown="1">
+    
+* **Before**  
+이미지  
+두 ChildViews가 Container ViewController의 인스턴스를 참조하면서 집합관계와 합성관계를 동시에 가지거나, 모든 ViewController에서 의존관계가 얽혀 있음
+
+UML을 그리고 나서 현재 구조에 문제점을 깨닫고 의존관계를 줄이는 작업을 시도함 
+* **After**  
+이미지  
+CoreDataManager가 Data Resource 역할을 하고 각 Child ViewController에 의존관계가 되는 형태로 변경
+</div></details>
