@@ -90,7 +90,9 @@ extension SecondaryViewController {
     }
     
     func setBarButtons(isHide: Bool) {
-        self.navigationItem.rightBarButtonItems = isHide ? [seeMoreStaticButton] : [hidableDoneButton, seeMoreStaticButton]
+        let items = isHide ? [seeMoreStaticButton] : [hidableDoneButton, seeMoreStaticButton]
+        self.navigationItem.setRightBarButtonItems(items, animated: true)
+//        self.navigationItem.rightBarButtonItems = isHide ? [seeMoreStaticButton] : [hidableDoneButton, seeMoreStaticButton]
     }
 }
 
